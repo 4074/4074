@@ -25,7 +25,7 @@ class UnionFindSet {
             this.parents[rx] = ry
         } else {
             this.parents[ry] = rx
-            this.ranks[ry] += this.ranks[rx] === this.ranks[ry] ? 1 : 0
+            this.ranks[rx] += this.ranks[rx] === this.ranks[ry] ? 1 : 0
         }
     }
 }
